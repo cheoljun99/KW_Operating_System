@@ -1,0 +1,12 @@
+운영체제 5차과제
+
+echo noop | sudo tee /sys/block/sda/queue/scheduler
+
+cat /sys/block/sda/queue/scheduler
+
+iozone -R -i 0 -i 1 -i 2 -i 7 -I -r 8k -s 1g -t 1 -F ~/iozone_test -b output.xls
+
+rm -rf ~/iozone_test
+sync
+echo 3 | sudo tee /proc/sys/vm/drop_caches
+

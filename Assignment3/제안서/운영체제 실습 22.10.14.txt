@@ -1,0 +1,10 @@
+asmlinkage pid_t process_trace(pid_t trace_task);
+
+
+Running or ready 0
+Wait with ignoring all signals 2
+Wait 1
+Stopped 4
+Zombie process 32
+Dead 64
+etc 그밖에
